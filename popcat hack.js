@@ -1,7 +1,12 @@
-/*
-	Original code by: DaWe35 & DzikStar (GitHub)
-	Made more powerful: OJector (GitHub)
-*/
+function getCookie(name) {
+  let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+
+
 eval(function(p, a, c, k, e, d) {
   while (c--) {
     if (k[c]) {
@@ -9,7 +14,7 @@ eval(function(p, a, c, k, e, d) {
     }
   }
   return p
-}('3 2=4 5(\'6\',{7:\'g\',8:a});9(b(){c(1=0;1<d;1++){e.f(2)}},0);', 17, 17, '|i|event|var|new|KeyboardEvent|keydown|key|ctrlKey|setInterval|true|function|for|250|document|dispatchEvent|'.split('|')))
+}('3 2=4 5(\'6\',{7:\'g\',8:a});9(b(){c(1=0;1<d;1++){e.f(2)}},0);', 17, 17, '|i|event|var|new|KeyboardEvent|keydown|key|ctrlKey|setInterval|true|function|for|1000|document|dispatchEvent|'.split('|')))
 
 
 var event = new KeyboardEvent('keydown', {
@@ -55,6 +60,7 @@ var event10 = new KeyboardEvent('keydown', {
 
 
 
+
 setInterval(function(){
 	for (i = 0; i < 100; i++) {
 		document.dispatchEvent(event);
@@ -67,6 +73,17 @@ setInterval(function(){
 		document.dispatchEvent(event8);
 		document.dispatchEvent(event9);
 		document.dispatchEvent(event10);
+// Unban Script
+	if (getCookie('bot') == 'true') {
+		document.cookie = "bot=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+	}
+
 
 	}
-}, 0);
+}, 0); 
+
+/*
+	Original code by: DaWe35 & DzikStar (GitHub)
+	Unban script made by OJector! (GitHub)
+	Made more powerful: OJector (GitHub)
+*/
